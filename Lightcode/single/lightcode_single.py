@@ -386,23 +386,23 @@ print(f'-----  loss1 (initial): {loss1}')
 #     print('----- Bler 1(initial): ', bler1)
 #     print(f'-----  loss1: {loss1}')
 
-nums = 10
-ber1_list = []
-bler1_list = []
+# nums = 100
+# ber1_list = []
+# bler1_list = []
 
-for epoch in range(1, nums + 1):
-    print(f"-----------------------{epoch}------------------------")
-    message1, forward_noise1, feedback_noise1 = generate_data(args.num_samples_test, args.K1, args.N, args.forward_SNR1, args.feedback_SNR1)
-    loss1,  ber1, bler1, codewords1 = test(args, model, device, message1, forward_noise1, feedback_noise1)
-    print('----- Ber 1: ', ber1)
-    print('----- Bler 1: ', bler1)
-    print(f'-----  loss1: {loss1}')
-    ber1_list.append(ber1)
-    bler1_list.append(bler1)
-avg_ber1 = sum(ber1_list)/nums
-avg_bler1 = sum(bler1_list)/nums
-print('----- avg_ber1: ', avg_ber1)
-print('----- avg_bler1: ', avg_bler1)
+# for epoch in range(1, nums + 1):
+#     print(f"-----------------------{epoch}------------------------")
+#     message1, forward_noise1, feedback_noise1 = generate_data(args.num_samples_test, args.K1, args.N, args.forward_SNR1, args.feedback_SNR1)
+#     loss1,  ber1, bler1, codewords1 = test(args, model, device, message1, forward_noise1, feedback_noise1)
+#     print('----- Ber 1: ', ber1)
+#     print('----- Bler 1: ', bler1)
+#     print(f'-----  loss1: {loss1}')
+#     ber1_list.append(ber1)
+#     bler1_list.append(bler1)
+# avg_ber1 = sum(ber1_list)/nums
+# avg_bler1 = sum(bler1_list)/nums
+# print('----- avg_ber1: ', avg_ber1)
+# print('----- avg_bler1: ', avg_bler1)
        
        
 
